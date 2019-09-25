@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+if
+  [[ -s "/home/lezwon/Desktop/MyProject/transaction/transaction/vendor/bundle/environment" ]]
+then
+  source "/home/lezwon/Desktop/MyProject/transaction/transaction/vendor/bundle/environment"
+  exec rake "$@"
+else
+  echo "ERROR: Missing RVM environment file: '/home/lezwon/Desktop/MyProject/transaction/transaction/vendor/bundle/environment'" >&2
+  exit 1
+fi

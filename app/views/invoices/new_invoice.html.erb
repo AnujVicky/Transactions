@@ -1,0 +1,33 @@
+<%= javascript_include_tag 'application' %>
+
+<center>
+  <h1> New Invoice </h1>
+</center>
+  <center>
+<%=form_tag :action => 'create',:class => 'container' do %>
+  <table>
+    <tbody>
+      <%=link_to 'list', :action=>'list'%>
+<%#if flash[:notice].present?%>
+<%#end%>
+<%if flash[:warning].present?%>
+<p class="flash_warning"><%=flash[:warning]%></p>
+<%end%>
+  <td>
+<b>Name:</b> </br><%=text_field 'invoice','name'%></td>
+</tr>
+<tr><td>
+<b>Amount:</b></br> <%=text_field 'invoice','amount'%></td></tr>
+<tr><td>
+<b>Tax:</b></br> <%=text_field 'invoice','tax'%></td></tr>
+
+<tr><td>
+<center><%=submit_tag 'Create', :class => 'signup'%></center></td></tr>
+
+</tbody>
+</table>
+<%end%>
+
+
+
+</center>

@@ -1,0 +1,66 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body{
+ background-image: url("bckdor.jpeg");
+ background-size: 65%;
+
+}
+.signup {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+  opacity: 0.9;
+}
+
+.signup:hover {
+  opacity:1;
+}
+.flash {
+  padding: 20px;
+  background-color: green;
+  color: white;
+}
+.flash_warning{
+  padding: 20px;
+  background-color: red;
+  color: white;
+}
+form {
+      margin-left: -85px;
+opacity: 0.8;
+  width: 25%;
+    height: 290px;
+    padding-top: 45px;
+
+}
+.err{
+color: red;
+}
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+      margin-left: -133px;
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}

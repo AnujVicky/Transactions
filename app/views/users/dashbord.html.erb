@@ -1,0 +1,5 @@
+<%= javascript_include_tag 'application' %>
+
+<%=link_to 'Logout',:action=>'destroy'%>
+<%=@sign.name%>
+<%=link_to 'new invoice',:controller=>'invoices' ,:action=>'new_invoice'%>

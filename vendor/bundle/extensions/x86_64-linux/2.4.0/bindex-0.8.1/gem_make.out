@@ -1,0 +1,15 @@
+current directory: /home/lezwon/Desktop/MyProject/transaction/transaction/vendor/bundle/gems/bindex-0.8.1/ext/skiptrace
+/home/lezwon/.rvm/rubies/ruby-2.4.0/bin/ruby -r ./siteconf20190803-5229-13g8nno.rb extconf.rb
+creating Makefile
+
+current directory: /home/lezwon/Desktop/MyProject/transaction/transaction/vendor/bundle/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /home/lezwon/Desktop/MyProject/transaction/transaction/vendor/bundle/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.so
+
+current directory: /home/lezwon/Desktop/MyProject/transaction/transaction/vendor/bundle/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -m 0755 cruby.so ./.gem.20190803-5229-dtq3ai/skiptrace/internal

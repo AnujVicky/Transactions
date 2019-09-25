@@ -1,0 +1,19 @@
+current directory: /home/lezwon/Desktop/MyProject/transaction/transaction/vendor/bundle/gems/byebug-11.0.1/ext/byebug
+/home/lezwon/.rvm/rubies/ruby-2.4.0/bin/ruby -r ./siteconf20190803-5229-1pxwjth.rb extconf.rb
+creating Makefile
+
+current directory: /home/lezwon/Desktop/MyProject/transaction/transaction/vendor/bundle/gems/byebug-11.0.1/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /home/lezwon/Desktop/MyProject/transaction/transaction/vendor/bundle/gems/byebug-11.0.1/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.so
+
+current directory: /home/lezwon/Desktop/MyProject/transaction/transaction/vendor/bundle/gems/byebug-11.0.1/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -m 0755 byebug.so ./.gem.20190803-5229-4505t0/byebug

@@ -1,0 +1,30 @@
+<%= javascript_include_tag 'application' %>
+
+<center>
+  <h1> Sign In </h1>
+</center>
+  <center>
+<%=form_tag :action => 'dash',:class => 'container' do %>
+  <table>
+    <tbody>
+      <%=link_to 'Sign Up', :action=>'new'%>
+<%#if flash[:notice].present?%>
+<%#end%>
+<%if flash[:warning].present?%>
+<p class="flash_warning"><%=flash[:warning]%></p>
+<%end%>
+  <td>
+<b>Email:</b> </br><%=text_field 'user','email'%></td>
+</tr>
+<tr><td>
+<b>Password:</b></br> <%=password_field 'user','password'%></td></tr>
+<tr><td>
+<center><%=submit_tag 'Sign In', :class => 'signup'%></center></td></tr>
+
+</tbody>
+</table>
+<%end%>
+
+
+
+</center>

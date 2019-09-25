@@ -1,0 +1,47 @@
+<center>
+  <h1> Sign Up </h1>
+</center>
+<%=link_to 'Login', :action=> 'login'%>
+
+  <center>
+<%=form_tag :action => 'create',:class => 'container' do %>
+  <table>
+    <tbody>
+<%if flash[:notice].present?%>
+<p class="flash"><%=flash[:notice]%></p>
+<%end%>
+<%if flash[:warning].present?%>
+<p class="flash_warning"><%=flash[:warning]%></p>
+<%end%>
+
+<ul>
+<% if @signup.errors.any? %>
+    <% @signup.errors.full_messages.each do |message| %>
+     <div id="error_explanation">
+      <%= message %>
+    </div>
+    <% end %>
+  <% end %>
+</ul>
+  <tr>
+<td>
+<b>User Name:</b></br> <%=text_field 'user','name'%>
+</td>
+</tr>
+</tr>
+<td>
+<b>Email:</b> </br><%=text_field 'user','email'%></td>
+</tr>
+<tr><td>
+<b>Password:</b></br> <%=password_field 'user','password'%></td></tr>
+<tr><td>
+<b>Confirm Password:</b> </br><%=password_field 'user','password_confirmation'%></td></tr>
+<tr><td>
+<center><%=submit_tag 'Sign Up', :class => 'signup'%></center></td></tr>
+
+</tbody>
+</table>
+<%end%>
+
+
+</center>

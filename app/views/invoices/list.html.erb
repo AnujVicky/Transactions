@@ -1,0 +1,52 @@
+<center>
+  <h1>Invoice List </h1>
+</center>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+tr:nth-child(odd) {
+  background-color: #ffff;
+}
+</style>
+  <center>
+<%if flash[:notice].present?%>
+<p class="flash" style="width: 227px;height: 12px;padding-top: 13px;"><%=flash[:notice]%></p>
+<%end%>
+<%if flash[:warning].present?%>
+<p class="flash_warning" style="width: 227px;height: 12px;padding-top: 13px;"><%=flash[:warning]%></p>
+<%end%>
+<%=link_to 'new invoice',:controller=>'invoices' ,:action=>'new_invoice'%>
+<table>
+  <tbody >
+    <tr>
+<th>Sr.NO.</th>
+<th>Name</th>
+<th>Amount</th>
+<th>Tax</th>
+<th>Invoice No.</th>
+<th>Total Amount</th>
+<th>Date</th>
+</tr>
+<%count = 1%>
+<%#raise @invoices.inspect%>
+<%for a in @invoices %>
+<tr>
+
+<td><%=count%></td>
+<td><%=a.name rescue nil%></td>
+<td><%=a.amount rescue nil%></td>
+<td><%=a.tax rescue nil%></td>
+<td><%=a.tinv rescue nil%></td>
+<td><%=a.totalamount rescue nil%></td>
+<td><%=a.created_at.strftime("%d-%m-%y") rescue nil%></td>
+</tr>
+<%count += 1%>
+<%end%>
+</tbody>
+</table>
+
+</center>

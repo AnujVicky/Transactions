@@ -1,0 +1,5 @@
+current directory: /home/lezwon/Desktop/MyProject/transaction/transaction/vendor/bundle/gems/childprocess-1.0.1/ext
+/home/lezwon/.rvm/rubies/ruby-2.4.0/bin/ruby mkrf_conf.rb
+
+current directory: /home/lezwon/Desktop/MyProject/transaction/transaction/vendor/bundle/gems/childprocess-1.0.1/ext
+/home/lezwon/.rvm/rubies/ruby-2.4.0/bin/ruby -rubygems /home/lezwon/Desktop/MyProject/transaction/transaction/vendor/bundle/gems/rake-12.3.3/exe/rake RUBYARCHDIR=/home/lezwon/Desktop/MyProject/transaction/transaction/vendor/bundle/extensions/x86_64-linux/2.4.0/childprocess-1.0.1 RUBYLIBDIR=/home/lezwon/Desktop/MyProject/transaction/transaction/vendor/bundle/extensions/x86_64-linux/2.4.0/childprocess-1.0.1
