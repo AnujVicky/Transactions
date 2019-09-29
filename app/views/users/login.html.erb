@@ -1,11 +1,7 @@
 <%= javascript_include_tag 'application' %>
-
-<center>
-  <h1> Sign In </h1>
-</center>
-  <center>
 <%=form_tag :action => 'dash',:class => 'container' do %>
-  <table>
+<fieldset style="background: #5c5f64;">
+  <table align="center">
     <tbody>
       <%=link_to 'Sign Up', :action=>'new'%>
 <%#if flash[:notice].present?%>
@@ -14,17 +10,14 @@
 <p class="flash_warning"><%=flash[:warning]%></p>
 <%end%>
   <td>
-<b>Email:</b> </br><%=text_field 'user','email'%></td>
+<b style="color: white;">Email:</b> </br><%=text_field 'user','email', :class=>"texts" ,:style=>"background: darkturquoise;"%></td>
 </tr>
 <tr><td>
-<b>Password:</b></br> <%=password_field 'user','password'%></td></tr>
+<b style="color:  white;">Password:</b></br> <%=password_field 'user','password', :class=>"texts",:style=>"background: darkturquoise;"%></td></tr>
 <tr><td>
-<center><%=submit_tag 'Sign In', :class => 'signup'%></center></td></tr>
+<center><%=submit_tag 'Sign In', :class => 'signup',:style=>"background: darkturquoise;"%></center></td></tr>
 
 </tbody>
 </table>
+</fieldset>
 <%end%>
-
-
-
-</center>

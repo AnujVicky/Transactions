@@ -1,5 +1,5 @@
 <center>
-  <h1>Invoice List </h1>
+  <h1 style="color: white;">Invoice List </h1>
 </center>
 <style>
 table, th, td {
@@ -14,7 +14,7 @@ tr:nth-child(odd) {
 </style>
   <center>
 <%if flash[:notice].present?%>
-<p class="flash" style="width: 227px;height: 12px;padding-top: 13px;"><%=flash[:notice]%></p>
+<p class="flash" style="width: 280px;height: 12px;padding-top: 13px;"><%=flash[:notice]%></p>
 <%end%>
 <%if flash[:warning].present?%>
 <p class="flash_warning" style="width: 227px;height: 12px;padding-top: 13px;"><%=flash[:warning]%></p>

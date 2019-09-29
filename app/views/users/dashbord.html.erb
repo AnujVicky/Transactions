@@ -1,5 +1,8 @@
 <%= javascript_include_tag 'application' %>
-
+<html>
+<body  style="background-size: 100%">
 <%=link_to 'Logout',:action=>'destroy'%>
-<%=@sign.name%>
+<span style="color: white;"><%=@sign.name%></span>
 <%=link_to 'new invoice',:controller=>'invoices' ,:action=>'new_invoice'%>
+</body>
+</html>

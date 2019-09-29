@@ -1,7 +1,7 @@
 <%= javascript_include_tag 'application' %>
 
 <center>
-  <h1> New Invoice </h1>
+  <h1 style="color: white;"> New Invoice </h1>
 </center>
   <center>
 <%=form_tag :action => 'create',:class => 'container' do %>
@@ -14,12 +14,12 @@
 <p class="flash_warning"><%=flash[:warning]%></p>
 <%end%>
   <td>
-<b>Name:</b> </br><%=text_field 'invoice','name'%></td>
+<b>Name:</b> </br><%=text_field 'invoice','name', :required=>true;%></td>
 </tr>
 <tr><td>
-<b>Amount:</b></br> <%=text_field 'invoice','amount'%></td></tr>
+<b>Amount:</b></br> <%=text_field 'invoice','amount', :required=>true;%></td></tr>
 <tr><td>
-<b>Tax:</b></br> <%=text_field 'invoice','tax'%></td></tr>
+<b>Tax:</b></br> <%=text_field 'invoice','tax', :required=>true;%></td></tr>
 
 <tr><td>
 <center><%=submit_tag 'Create', :class => 'signup'%></center></td></tr>
